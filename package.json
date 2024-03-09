@@ -4,5 +4,17 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.3.10",
+    "@swc/core": "^1.4.6",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "esbuild": "^0.20.1",
+    "typescript": "^5.4.2"
+  },
+  "scripts": {
+    "build": "esbuild src/index.tsx --bundle --outdir=dist --minify --sourcemap --platform=browser",
+    "start": "esbuild src/index.tsx --bundle --outdir=dist --sourcemap --platform=browser --serve=3000 --watch"
   }
 }
