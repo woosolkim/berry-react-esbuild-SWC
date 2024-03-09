@@ -1,4 +1,4 @@
 {
-  "name": "berry-webpack",
+  "name": "berry-react-esbuild-swc",
   "packageManager": "yarn@4.1.1"
 }
