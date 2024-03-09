@@ -1,13 +1,18 @@
 {
   "jsc": {
     "parser": {
-      "syntax": "ecmascript",
-      "jsx": true
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": false,
+      "dynamicImport": true
     },
     "transform": {
       "react": {
         "runtime": "automatic"
       }
     }
+  },
+  "module": {
+    "type": "es6"
   }
 }
