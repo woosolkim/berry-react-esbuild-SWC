@@ -2,6 +2,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["vite/client"],
     "jsx": "react",
     "strict": true,
     "moduleResolution": "node",

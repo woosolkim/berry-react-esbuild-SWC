@@ -6,5 +6,6 @@
 !.yarn/versions
 !.yarn/cache
 .pnp.*
+.vite
 
 .env

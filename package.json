@@ -7,15 +7,15 @@
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
-    "@swc/cli": "^0.3.10",
-    "@swc/core": "^1.4.6",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
-    "esbuild": "^0.20.1",
-    "typescript": "^5.4.2"
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.5",
+    "vite-tsconfig-paths": "^4.3.1"
   },
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --outdir=dist --minify",
-    "start": "esbuild src/index.tsx --bundle --outdir=dist --serve=3000 --watch"
+    "dev": "vite",
+    "build": "vite build"
   }
 }
