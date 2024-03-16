@@ -7,16 +7,16 @@ import {
   useSetRecoilState,
 } from "recoil";
 import { cmState, cmToInchState, counterState } from "../stats";
-import { useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 
 const END_POINT = "http://localhost:4000";
 
-type HelloResponse = {
+export type HelloResponse = {
   message: string;
   date: string;
 };
 
-const fetchUser = async (): Promise<HelloResponse> => {
+export const fetchUser = async (): Promise<HelloResponse> => {
   const response = await fetch(`${END_POINT}/hello`);
   if (!response.ok) {
     throw new Error("Network response was not ok");
