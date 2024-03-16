@@ -1,9 +1,7 @@
 import {
   Route,
-  Routes,
   createBrowserRouter,
   createRoutesFromElements,
-  defer,
 } from "react-router-dom";
 
 import React, { Suspense } from "react";
@@ -20,8 +18,13 @@ const router = createBrowserRouter(
       <Route element={<Layout />}>
         <Route
           loader={async () => {
-            const respopnse = await fetch(`${END_POINT}/hello`);
-            return respopnse;
+            // const respopnse = await fetch(`${END_POINT}/hello`);
+            const user = {
+              message: "hello",
+              date: new Date().toISOString(),
+            };
+
+            return user;
           }}
           path="/"
           element={<Home />}
