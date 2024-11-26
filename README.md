@@ -1,7 +1,5 @@
-### Studying for Bundlers & Compilers
----
-
 - [x] 1. Yarn berry Setup (PnP)
+
 - [x] 2. ESBuild Setup
 - [x] 3. SWC Setup
 - [x] 4. Vite Migration
